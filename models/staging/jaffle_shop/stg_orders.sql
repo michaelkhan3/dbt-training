@@ -4,4 +4,4 @@ select
     order_date,
     status
 
-from `michael-khan-sandbox.jaffle_shop.orders`
+from {{ source('jaffle_shop', 'orders') }}
